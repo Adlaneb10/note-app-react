@@ -2,19 +2,28 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  const [userInput, setUserInput] = useState("");
-  
-  const tester = () => {
+  const [notes, setNotes] = useState([]);
+
+  const addNote = () => {
     let text = document.getElementById("input-add").value;
-    setUserInput(text);
-    console.log(userInput);
+
+    notes.push(text);
+
+    console.log(notes);
   }
 
   return (
     <div className="App">
       <div className='interactive-holder'>
         <input type="text" id="input-add" placeholder="Add a note"/>
-        <button id="btnAdd" onClick={tester} >Add</button>
+        <button id="btnAdd" onClick={addNote} >Add</button>
+      </div>
+      <div className='note-holder'>
+        <ul>
+          {notes.map((words, index) => 
+            <li >{words}</li>
+          )}
+        </ul>
       </div>
     </div>
   );
