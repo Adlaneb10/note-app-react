@@ -2,14 +2,17 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const clicker = () => {
+
+  const tester = () => {
     console.log("you clicked me")
   }
 
   return (
     <div className="App">
-      <input type="text" id="inputadd"></input>
-      <button id="btnAdd" onClick={clicker()}></button>
+      <div className='interactive-holder'>
+        <input type="text" id="add" placeholder="Add a note"/>
+        <button id="btnAdd" onClick={tester} >Add</button>
+      </div>
     </div>
   );
 }
