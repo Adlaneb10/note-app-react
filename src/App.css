@@ -1,0 +1,32 @@
+.App {
+    width: 75%;
+    margin: auto;
+}
+
+input, button {
+    padding: 15px;
+    display: inline-block;
+
+}
+
+button {
+    background-color: rgb(93, 173, 242);
+    color: white;
+    border-radius: 4px;
+    border: solid black 1px;
+    transition-duration: 0.4s;
+    
+}
+
+button:hover {
+    background-color: rgb(120, 180, 230);
+    cursor: pointer;
+}
+
+.note-holder li {
+    font-size: 20px;
+    margin-left: -40px;
+    list-style: none;
+    border: 1px solid black;
+    height: 200px;
+}

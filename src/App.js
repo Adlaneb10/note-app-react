@@ -20,7 +20,7 @@ function App() {
       </div>
       <div className='note-holder'>
         <ul>
-          {notes.map((words, index) => 
+          {notes.map((words) => 
             <li >{words}</li>
           )}
         </ul>
