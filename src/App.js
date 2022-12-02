@@ -26,13 +26,25 @@ function App() {
     }
   } 
 
+  const greenNotes = () => {
+    document.querySelector('ul').style.backgroundColor='Green';
+  }
+  const yellowNotes = () => {
+    document.querySelector('ul').style.backgroundColor='Yellow';
+  }
+  const redNotes = () => {
+    document.querySelector('ul').style.backgroundColor='Red';
+  }
+
   return (
     <div className="App">
       <div className='interactive-holder'>
         <input type="text" id="input-add" onChange={(e) => setText(e.target.value)} placeholder="Add a note"/>
         <button id="btnAdd" onClick={addNote}  >Add</button>
         <button id="btnDel" onClick={delNote} >Delete</button>
-        <button id="btnGreen" onClick={delNote} >Green Notes</button>
+        <button id="btnGreen" onClick={greenNotes}>Green Notes</button>
+        <button id="btnYellow" onClick={yellowNotes} >Yellow Notes</button>
+        <button id="btnRed" onClick={redNotes} >Red Notes</button>
 
       </div>
       <div id="error-input">
