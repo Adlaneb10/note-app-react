@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-
+  const [userInput, setUserInput] = useState("");
+  
   const tester = () => {
     let text = document.getElementById("input-add").value;
-    console.log(text)
+    setUserInput(text);
+    console.log(userInput);
   }
 
   return (
