@@ -6,10 +6,13 @@ function App() {
 
   const addNote = () => {
     let text = document.getElementById("input-add").value;
+  notes.push(text);
+  }
 
-    notes.push(text);
-
-    console.log(notes);
+  const delNote = () => {
+    let text = document.getElementById('input-add').value; 
+    let arrayPos = notes.indexOf(text);
+    console.log(arrayPos);
   }
 
   return (
