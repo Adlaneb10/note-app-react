@@ -30,3 +30,10 @@ button:hover {
     border: 1px solid black;
     height: 200px;
 }
+
+#error-input {
+    background-color: rgb(247, 193, 193);
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
